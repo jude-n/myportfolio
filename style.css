@@ -379,22 +379,22 @@ section {
 .exp-meta { display: flex; flex-direction: column; gap: 6px; padding-top: 4px; }
 .exp-period {
   font-family: 'DM Mono', monospace;
-  font-size: 11px; color: var(--muted); letter-spacing: 0.1em;
+  font-size: 13px; color: var(--muted); letter-spacing: 0.1em;
   transition: color 0.3s;
 }
 .exp-company {
   font-family: 'DM Mono', monospace;
-  font-size: 11px; color: var(--accent); letter-spacing: 0.05em;
+  font-size: 13px; color: var(--accent); letter-spacing: 0.05em;
   transition: color 0.3s;
 }
 
 .exp-role {
-  font-size: 20px; font-weight: 700;
-  margin-bottom: 12px; letter-spacing: -0.01em;
+  font-size: 22px; font-weight: 700;
+  margin-bottom: 14px; letter-spacing: -0.01em;
 }
 .exp-desc {
   font-family: 'DM Mono', monospace;
-  font-size: 12px; color: var(--mid);
+  font-size: 14px; color: var(--mid);
   line-height: 1.9; margin-bottom: 20px;
   max-width: 600px; transition: color 0.3s;
 }
@@ -402,9 +402,9 @@ section {
 .exp-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .tag {
   font-family: 'DM Mono', monospace;
-  font-size: 10px; color: var(--muted);
+  font-size: 12px; color: var(--muted);
   border: 1px solid var(--border);
-  padding: 4px 10px; letter-spacing: 0.1em;
+  padding: 5px 12px; letter-spacing: 0.1em;
   text-transform: uppercase; transition: all 0.2s;
 }
 .tag:hover {
@@ -437,21 +437,21 @@ section {
 
 .project-num {
   font-family: 'DM Mono', monospace;
-  font-size: 10px; color: var(--muted);
+  font-size: 12px; color: var(--muted);
   letter-spacing: 0.2em; transition: color 0.3s;
 }
 .project-name {
-  font-size: 20px; font-weight: 700;
+  font-size: 22px; font-weight: 700;
   letter-spacing: -0.01em; line-height: 1.2;
 }
 .project-desc {
   font-family: 'DM Mono', monospace;
-  font-size: 11px; color: var(--mid);
-  line-height: 1.8; flex: 1; transition: color 0.3s;
+  font-size: 13px; color: var(--mid);
+  line-height: 1.85; flex: 1; transition: color 0.3s;
 }
 .project-link {
   font-family: 'DM Mono', monospace;
-  font-size: 10px; color: var(--accent);
+  font-size: 12px; color: var(--accent);
   text-decoration: none; letter-spacing: 0.15em;
   text-transform: uppercase;
   display: flex; align-items: center; gap: 8px;
@@ -461,7 +461,7 @@ section {
 
 .project-link-muted {
   font-family: 'DM Mono', monospace;
-  font-size: 10px; color: var(--muted);
+  font-size: 12px; color: var(--muted);
   letter-spacing: 0.1em;
   display: flex; align-items: center; gap: 6px;
   transition: color 0.3s;
@@ -475,7 +475,7 @@ section {
 
 .skills-intro {
   font-family: 'DM Mono', monospace;
-  font-size: 13px; color: var(--mid);
+  font-size: 15px; color: var(--mid);
   line-height: 1.9;
   position: sticky; top: 120px; transition: color 0.3s;
 }
@@ -483,7 +483,7 @@ section {
 .skills-groups { display: flex; flex-direction: column; gap: 48px; }
 .skill-group-label {
   font-family: 'DM Mono', monospace;
-  font-size: 10px; color: var(--muted);
+  font-size: 12px; color: var(--muted);
   letter-spacing: 0.2em; text-transform: uppercase;
   margin-bottom: 20px; transition: color 0.3s;
 }
@@ -491,9 +491,9 @@ section {
 .skill-pills { display: flex; flex-wrap: wrap; gap: 10px; }
 .skill-pill {
   font-family: 'DM Mono', monospace;
-  font-size: 12px; color: var(--text);
+  font-size: 13px; color: var(--text);
   border: 1px solid var(--border);
-  padding: 8px 16px; transition: all 0.2s; background: transparent;
+  padding: 9px 18px; transition: all 0.2s; background: transparent;
 }
 .skill-pill:hover {
   border-color: var(--accent); color: var(--accent);
@@ -524,12 +524,12 @@ section {
 }
 .contact-label {
   font-family: 'DM Mono', monospace;
-  font-size: 10px; color: var(--muted);
+  font-size: 12px; color: var(--muted);
   letter-spacing: 0.2em; text-transform: uppercase; transition: color 0.3s;
 }
 .contact-value {
   font-family: 'DM Mono', monospace;
-  font-size: 13px; color: var(--text);
+  font-size: 15px; color: var(--text);
   text-decoration: none; transition: color 0.2s;
 }
 .contact-value:hover { color: var(--accent); }
@@ -542,7 +542,7 @@ footer {
 }
 .footer-copy {
   font-family: 'DM Mono', monospace;
-  font-size: 10px; color: var(--muted);
+  font-size: 12px; color: var(--muted);
   letter-spacing: 0.1em; transition: color 0.3s;
 }
 
