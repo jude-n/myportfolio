@@ -51,6 +51,38 @@ document.querySelectorAll('a, button').forEach(el => {
   });
 });
 
+// ── HERO SPOTLIGHT ──
+const hero = document.querySelector('.hero');
+const heroGlow = document.querySelector('.hero-glow');
+
+if (hero && heroGlow) {
+  hero.addEventListener('mousemove', e => {
+    const rect = hero.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    // Move the glow to follow the cursor
+    heroGlow.style.transition = 'left 0.08s ease, top 0.08s ease';
+    heroGlow.style.left   = x + 'px';
+    heroGlow.style.top    = y + 'px';
+    heroGlow.style.transform = 'translate(-50%, -50%)';
+
+    // Subtle tint shift on the grid bg
+    const xPct = (x / rect.width)  * 100;
+    const yPct = (y / rect.height) * 100;
+    hero.style.setProperty('--mouse-x', `${xPct}%`);
+    hero.style.setProperty('--mouse-y', `${yPct}%`);
+  });
+
+  hero.addEventListener('mouseleave', () => {
+    // Drift back to center
+    heroGlow.style.transition = 'left 1.2s ease, top 1.2s ease';
+    heroGlow.style.left   = '50%';
+    heroGlow.style.top    = '50%';
+    heroGlow.style.transform = 'translate(-50%, -50%)';
+  });
+}
+
 // ── SCROLL FADE-IN ──
 const obs = new IntersectionObserver((entries) => {
   entries.forEach(e => {
