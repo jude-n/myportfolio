@@ -3,57 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jude Norvor — Full-Stack Engineer</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<title>Jude Norvor — Backend Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
-
-<!-- Nav -->
+<!-- NAV -->
 <nav>
   <div class="nav-logo">JN</div>
-  <div class="nav-right">
-    <ul class="nav-links">
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-      <div class="toggle-track">
-        <div class="toggle-thumb"></div>
-      </div>
-      <span id="themeLabel">Light</span>
-    </button>
-  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Stack</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="cv/Jude_Norvor_Resume.pdf" download class="nav-resume-btn">↓ Resume</a>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+    <div class="toggle-icons">
+      <span class="toggle-icon" id="toggleIcon">☀️</span>
+    </div>
+    <span class="toggle-label" id="toggleLabel">Light</span>
+  </button>
 </nav>
 
-<!-- Hero -->
-<section class="hero" style="border-top: none; padding-top: 0; padding-bottom: 0;">
-  <div class="hero-grid-bg"></div>
-  <div class="hero-glow"></div>
+<!-- HERO -->
+<section class="hero" style="border-top: none;">
+  <div class="hero-bg-word">ENGINEER</div>
 
   <div class="hero-left fade-up">
-    <div class="hero-tag">Full-Stack Engineer · Cybersecurity MSc</div>
+    <div class="hero-tag">Backend Engineer · Cybersecurity MSc</div>
     <h1 class="hero-name">
-      <span class="line-1">Jude</span><br>
-      <span class="line-2">Norvor</span>
+      Jude<br>
+      <span class="italic">Norvor</span>
     </h1>
     <p class="hero-desc">
-      I build secure, scalable backend systems and the APIs that power them.
-      Based in Charleston, IL — working across Laravel, PHP, Python, Docker, and cloud infrastructure.
+      I build the systems that quietly keep everything running — secure APIs, robust backends, and the infrastructure that ties it all together.
     </p>
     <div class="hero-ctas">
       <a href="#contact" class="btn-primary">Get in touch</a>
-      <a href="https://github.com/jude-n" class="btn-ghost" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/judenorvor/" class="btn-ghost" target="_blank">LinkedIn</a>
+      <a href="#about" class="btn-outline">My story</a>
+      <a href="cv/Jude_Norvor_Resume.pdf" download class="btn-outline">↓ Resume</a>
     </div>
   </div>
 
-  <div class="hero-right fade-up" style="transition-delay: 0.2s;">
+  <div class="hero-right fade-up" style="transition-delay:0.2s;">
     <div class="stats-grid">
       <div class="stat-item">
         <div class="stat-num">8+</div>
@@ -61,7 +56,7 @@
       </div>
       <div class="stat-item">
         <div class="stat-num">54</div>
-        <div class="stat-label">Depts served @ EIU</div>
+        <div class="stat-label">Depts @ EIU</div>
       </div>
       <div class="stat-item">
         <div class="stat-num">141</div>
@@ -72,16 +67,64 @@
         <div class="stat-label">Avg efficiency gain</div>
       </div>
     </div>
-    <div class="currently-box">
+    <div class="status-box">
       <div class="status-dot"></div>
-      <div class="currently-text">
-        Currently <strong>IT Technical Associate — Web/API Programmer II</strong> at Eastern Illinois University. Open to new opportunities.
+      <div class="status-text">
+        Currently <strong>IT Technical Associate — Web/API Programmer II</strong> at Eastern Illinois University. <strong>Open to new opportunities.</strong>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Experience -->
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-header">
+    <span class="section-num">00</span>
+    <h2 class="section-title">About</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-text fade-up">
+      <p>
+        I hold a <span class="highlight">B.Sc. in Computer Science from Ashesi University</span>, and that foundation instilled something in me early: a conviction that software should be <span class="accent-text">principled, not just functional.</span>
+      </p>
+      <p>
+        That conviction followed me to the United States, where I completed an <span class="highlight">M.S. in Cybersecurity at Eastern Illinois University</span>. Since then I've been building at EIU — writing APIs, integrating enterprise systems, deploying infrastructure, and quietly making 54 campus departments run better than they did before.
+      </p>
+      <p>
+        Over 8+ years across Ghana, the US, and remote projects, I've worked across the full stack — but the backend is where I'm most at home. I think in systems: <span class="highlight">clean architecture, domain-driven design, security-first API patterns.</span> I believe good software is mostly invisible, because it just works.
+      </p>
+      <p>
+        Right now I'm looking for a team that cares about <span class="accent-text">doing things right</span> — a place where engineering principles aren't just buzzwords on a job listing, and where I can grow alongside people who push each other.
+      </p>
+    </div>
+    <div class="about-aside fade-up" style="transition-delay: 0.15s;">
+      <div class="aside-item">
+        <div class="aside-label">Based in</div>
+        <div class="aside-value">Charleston, IL — Remote-ready worldwide</div>
+      </div>
+      <div class="aside-item">
+        <div class="aside-label">Education</div>
+        <div class="aside-value">M.S. Cybersecurity — EIU (2024)<br>B.Sc. Computer Science — Ashesi (2016)</div>
+      </div>
+      <div class="aside-item">
+        <div class="aside-label">Primary stack</div>
+        <div class="aside-value">PHP / Laravel · Python / FastAPI<br>Oracle · MySQL · Docker</div>
+      </div>
+      <div class="aside-item">
+        <div class="aside-label">Speaks</div>
+        <div class="aside-value">English · Ewe · Twi</div>
+      </div>
+      <div class="aside-item">
+        <div class="aside-label">Currently reading</div>
+        <div class="aside-value">Clean Architecture — Robert C. Martin</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
 <section id="experience">
   <div class="section-header">
     <span class="section-num">01</span>
@@ -93,14 +136,14 @@
     <div class="exp-item fade-up">
       <div class="exp-meta">
         <span class="exp-period">Jul 2024 – Present</span>
-        <span class="exp-company">Eastern Illinois University</span>
+        <span class="exp-company">Eastern Illinois Univ.</span>
       </div>
       <div class="exp-content">
         <div class="exp-role">IT Technical Associate — Web/API Programmer II</div>
         <p class="exp-desc">
-          Designing and maintaining secure dynamic web applications across campus departments. Integrating Banner web apps with internal and external APIs, deploying via Docker and GitHub, and building custom role/permission management services.
+          Design and maintain secure dynamic web applications across campus departments. Integrate Banner web apps with internal and external APIs, deploy containerized services via Docker and GitHub, and build centralized role/permission management APIs used across multiple applications.
         </p>
-        <div class="exp-tags">
+        <div class="tags">
           <span class="tag">Laravel</span><span class="tag">PHP</span>
           <span class="tag">Oracle</span><span class="tag">MySQL</span>
           <span class="tag">Docker</span><span class="tag">ProcessMaker</span>
@@ -111,16 +154,16 @@
     <div class="exp-item fade-up">
       <div class="exp-meta">
         <span class="exp-period">Aug 2022 – May 2024</span>
-        <span class="exp-company">Eastern Illinois University</span>
+        <span class="exp-company">Eastern Illinois Univ.</span>
       </div>
       <div class="exp-content">
         <div class="exp-role">Developer Graduate Assistant</div>
         <p class="exp-desc">
-          Built tailored software solutions for 54 departments — improving operations by 30%. Resolved 141 support tickets, boosting satisfaction by 20%. Developed a versatile multi-Oracle API endpoint using middleware, eliminating redundant instances.
+          Delivered custom software for 54 departments, improving operations by 30%. Resolved 141 support tickets (+20% satisfaction). Built a middleware-powered multi-Oracle API endpoint that eliminated redundant instances and centralized data access for the entire campus.
         </p>
-        <div class="exp-tags">
-          <span class="tag">Full-Stack</span><span class="tag">APIs</span>
-          <span class="tag">Oracle</span><span class="tag">GitHub</span>
+        <div class="tags">
+          <span class="tag">Full-Stack</span><span class="tag">REST APIs</span>
+          <span class="tag">Oracle</span><span class="tag">Laravel</span>
         </div>
       </div>
     </div>
@@ -133,9 +176,9 @@
       <div class="exp-content">
         <div class="exp-role">Data Engineer</div>
         <p class="exp-desc">
-          Developed financial forecasting algorithms in Python. Built scalable backend infrastructure with AWS Lambda and DynamoDB. Integrated front-end interfaces for real-time financial insights.
+          Developed financial forecasting algorithms in Python. Built scalable backend infrastructure on AWS Lambda and DynamoDB. Integrated real-time financial dashboards across front-end and backend systems.
         </p>
-        <div class="exp-tags">
+        <div class="tags">
           <span class="tag">Python</span><span class="tag">AWS Lambda</span><span class="tag">DynamoDB</span>
         </div>
       </div>
@@ -149,9 +192,9 @@
       <div class="exp-content">
         <div class="exp-role">Software Engineer</div>
         <p class="exp-desc">
-          Built web applications and services for international development organizations, improving business process efficiency by 30%. Constructed RESTful APIs via Laravel with MySQL backend.
+          Built web apps and APIs for international development organizations across West Africa, improving process efficiency by 30% and data retrieval speed by 20% through optimized Laravel/MySQL architecture.
         </p>
-        <div class="exp-tags">
+        <div class="tags">
           <span class="tag">Laravel</span><span class="tag">REST APIs</span><span class="tag">MySQL</span>
         </div>
       </div>
@@ -165,18 +208,18 @@
       <div class="exp-content">
         <div class="exp-role">Full-Stack Developer</div>
         <p class="exp-desc">
-          Implemented rigorous testing protocols achieving a 98% defect-free launch rate. Created technical manuals and led client training sessions, resulting in 90% improvement in application proficiency. Designed and implemented the OrderlyPOS system end-to-end.
+          Achieved a 98% defect-free launch rate through rigorous pre-launch testing protocols. Led client training sessions that boosted application proficiency by 90%. Designed and shipped OrderlyPOS end-to-end — database, admin UI, and backend API.
         </p>
-        <div class="exp-tags">
+        <div class="tags">
           <span class="tag">Laravel</span><span class="tag">MySQL</span>
-          <span class="tag">Angular</span><span class="tag">Laravel Lumen</span>
+          <span class="tag">Angular</span><span class="tag">Lumen</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Projects -->
+<!-- PROJECTS -->
 <section id="projects">
   <div class="section-header">
     <span class="section-num">02</span>
@@ -189,86 +232,98 @@
       <div class="project-num">001</div>
       <div class="project-name">Dbytel Delivery App</div>
       <p class="project-desc">
-        Co-led a team of five building a scalable delivery app. Designed database infrastructure, established DevOps automation in Azure, and guided React + Spring Boot development with clean architecture principles.
+        Co-led a team of five building a scalable delivery platform. Designed database architecture, set up Azure DevOps automation, and guided React + Spring Boot development using clean architecture and DDD principles.
       </p>
-      <div class="exp-tags" style="margin-bottom: 20px;">
+      <div class="tags" style="margin-bottom: 8px;">
         <span class="tag">React</span><span class="tag">Spring Boot</span>
         <span class="tag">Azure</span><span class="tag">DDD</span>
       </div>
-      <div style="display:flex; gap: 16px; flex-wrap: wrap;">
-        <a href="https://pos.akorno.com" class="project-link" target="_blank">POS →</a>
-        <a href="https://order.akorno.com" class="project-link" target="_blank">Order App →</a>
+      <div class="project-footer">
+        <div style="display:flex; gap:16px;">
+          <a href="https://pos.akorno.com" class="project-link" target="_blank">POS →</a>
+          <a href="https://order.akorno.com" class="project-link" target="_blank">Order App →</a>
+        </div>
       </div>
     </div>
 
-    <div class="project-card fade-up" style="transition-delay: 0.1s;">
+    <div class="project-card fade-up" style="transition-delay:0.1s;">
       <div class="project-num">002</div>
       <div class="project-name">EIU Global Site Manager</div>
       <p class="project-desc">
-        Revitalized EIU's website management system with Laravel, Tailwind CSS, and Alpine.js — achieving 30% performance gains, 50% enhanced system capabilities, and 40% reduction in admin task time.
+        Rebuilt EIU's campus-wide website management system using Laravel, Tailwind, and Alpine.js — delivering 30% performance gains, 50% improved system capabilities, and 40% reduction in admin task time.
       </p>
-      <div class="exp-tags" style="margin-bottom: 20px;">
+      <div class="tags" style="margin-bottom: 8px;">
         <span class="tag">Laravel</span><span class="tag">Tailwind</span>
         <span class="tag">Alpine.js</span><span class="tag">Oracle</span>
       </div>
-      <span class="project-link-muted">🔒 Organization repo</span>
+      <div class="project-footer">
+        <span class="project-locked">🔒 University codebase</span>
+      </div>
     </div>
 
-    <div class="project-card fade-up" style="transition-delay: 0.2s;">
+    <div class="project-card fade-up" style="transition-delay:0.2s;">
       <div class="project-num">003</div>
       <div class="project-name">Sentiment Analysis API</div>
       <p class="project-desc">
-        Co-designed a sentiment analysis backend using FastAPI, establishing a RESTful API for integration with third-party platforms. Deployed on Heroku with a collaborative dev workflow.
+        Co-designed a sentiment analysis backend using FastAPI, with a RESTful interface for integration with third-party platforms including Twitter. Deployed on Heroku in a collaborative two-engineer workflow.
       </p>
-      <div class="exp-tags" style="margin-bottom: 20px;">
+      <div class="tags" style="margin-bottom: 8px;">
         <span class="tag">FastAPI</span><span class="tag">Python</span>
         <span class="tag">REST</span><span class="tag">Heroku</span>
       </div>
-      <span class="project-link-muted">🔒 Organization repo</span>
+      <div class="project-footer">
+        <span class="project-locked">🔒 Organization repo</span>
+      </div>
     </div>
 
-    <div class="project-card fade-up" style="transition-delay: 0.3s;">
+    <div class="project-card fade-up" style="transition-delay:0.3s;">
       <div class="project-num">004</div>
       <div class="project-name">OrderlyPOS</div>
       <p class="project-desc">
-        Designed and implemented a full POS system — MySQL database models, admin interface via Laravel Voyager and Angular, and backend API via Laravel Lumen. Provided hardware and software support post-launch.
+        Designed and shipped a complete point-of-sale system — from MySQL schema design to admin UI (Laravel Voyager, Angular) to backend API (Lumen). Provided post-launch hardware and software support.
       </p>
-      <div class="exp-tags" style="margin-bottom: 20px;">
+      <div class="tags" style="margin-bottom: 8px;">
         <span class="tag">Laravel</span><span class="tag">Angular</span>
         <span class="tag">MySQL</span><span class="tag">Lumen</span>
       </div>
-      <span class="project-link-muted">🔒 Organization repo</span>
+      <div class="project-footer">
+        <span class="project-locked">🔒 Organization repo</span>
+      </div>
     </div>
 
-    <div class="project-card fade-up" style="transition-delay: 0.4s;">
+    <div class="project-card fade-up" style="transition-delay:0.4s;">
       <div class="project-num">005</div>
       <div class="project-name">Multi-Oracle API Endpoint</div>
       <p class="project-desc">
-        Built a versatile middleware-powered API endpoint that dynamically interfaces with multiple Oracle instances based on user queries — eliminating redundant application-specific instances and centralizing data access.
+        Middleware-powered API that dynamically routes queries to multiple Oracle instances — eliminating the need for separate application-specific database connections and centralizing data access university-wide.
       </p>
-      <div class="exp-tags" style="margin-bottom: 20px;">
+      <div class="tags" style="margin-bottom: 8px;">
         <span class="tag">PHP</span><span class="tag">Laravel</span>
         <span class="tag">Oracle</span><span class="tag">Middleware</span>
       </div>
-      <span class="project-link-muted">🔒 Organization repo</span>
+      <div class="project-footer">
+        <span class="project-locked">🔒 University codebase</span>
+      </div>
     </div>
 
-    <div class="project-card fade-up" style="transition-delay: 0.5s;">
+    <div class="project-card fade-up" style="transition-delay:0.5s;">
       <div class="project-num">006</div>
       <div class="project-name">Financial Forecasting Engine</div>
       <p class="project-desc">
-        Developed and optimized financial forecasting algorithms in Python. Leveraged AWS Lambda for scalability and DynamoDB for high-throughput data management, with real-time frontend integration.
+        Python-based forecasting algorithms deployed on AWS Lambda for serverless scalability, with DynamoDB for high-throughput data and real-time dashboard integration for financial analysts.
       </p>
-      <div class="exp-tags" style="margin-bottom: 20px;">
+      <div class="tags" style="margin-bottom: 8px;">
         <span class="tag">Python</span><span class="tag">AWS Lambda</span>
-        <span class="tag">DynamoDB</span><span class="tag">AWS</span>
+        <span class="tag">DynamoDB</span>
       </div>
-      <span class="project-link-muted">🔒 Organization repo</span>
+      <div class="project-footer">
+        <span class="project-locked">🔒 Organization repo</span>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Skills -->
+<!-- SKILLS -->
 <section id="skills">
   <div class="section-header">
     <span class="section-num">03</span>
@@ -276,17 +331,17 @@
     <div class="section-line"></div>
   </div>
 
-  <div class="skills-section">
+  <div class="skills-layout">
     <div class="skills-intro fade-up">
-      I'm most at home in the backend — designing systems that are clean, secure, and built to last. I bring a security-first mindset from my Master's in Cybersecurity and apply engineering principles like SOLID, DDD, and Clean Architecture to everything I build.
+      Backend is my home — designing systems that are <em>clean, secure, and built to last.</em> I bring a security-first mindset from my Master's in Cybersecurity and apply engineering principles like SOLID, DDD, and Clean Architecture to everything I build.
     </div>
 
     <div class="skills-groups">
       <div class="fade-up">
         <div class="skill-group-label">Languages</div>
         <div class="skill-pills">
-          <span class="skill-pill highlight">PHP</span>
-          <span class="skill-pill highlight">Python</span>
+          <span class="skill-pill key">PHP</span>
+          <span class="skill-pill key">Python</span>
           <span class="skill-pill">JavaScript</span>
           <span class="skill-pill">TypeScript</span>
           <span class="skill-pill">PL/SQL</span>
@@ -295,8 +350,8 @@
       <div class="fade-up">
         <div class="skill-group-label">Frameworks & Libraries</div>
         <div class="skill-pills">
-          <span class="skill-pill highlight">Laravel</span>
-          <span class="skill-pill highlight">FastAPI</span>
+          <span class="skill-pill key">Laravel</span>
+          <span class="skill-pill key">FastAPI</span>
           <span class="skill-pill">Vue.js</span>
           <span class="skill-pill">Tailwind CSS</span>
           <span class="skill-pill">Alpine.js</span>
@@ -306,7 +361,7 @@
       <div class="fade-up">
         <div class="skill-group-label">Infrastructure & DevOps</div>
         <div class="skill-pills">
-          <span class="skill-pill highlight">Docker</span>
+          <span class="skill-pill key">Docker</span>
           <span class="skill-pill">AWS</span>
           <span class="skill-pill">Azure</span>
           <span class="skill-pill">GitHub Actions</span>
@@ -316,17 +371,17 @@
       <div class="fade-up">
         <div class="skill-group-label">Databases</div>
         <div class="skill-pills">
-          <span class="skill-pill highlight">MySQL</span>
-          <span class="skill-pill highlight">Oracle</span>
+          <span class="skill-pill key">MySQL</span>
+          <span class="skill-pill key">Oracle</span>
           <span class="skill-pill">DynamoDB</span>
           <span class="skill-pill">SQLAlchemy</span>
           <span class="skill-pill">Eloquent ORM</span>
         </div>
       </div>
       <div class="fade-up">
-        <div class="skill-group-label">Principles</div>
+        <div class="skill-group-label">Engineering Principles</div>
         <div class="skill-pills">
-          <span class="skill-pill highlight">Clean Architecture</span>
+          <span class="skill-pill key">Clean Architecture</span>
           <span class="skill-pill">SOLID</span>
           <span class="skill-pill">DDD</span>
           <span class="skill-pill">Repository Pattern</span>
@@ -338,7 +393,7 @@
   </div>
 </section>
 
-<!-- Contact -->
+<!-- CONTACT -->
 <section id="contact" style="padding-bottom: 0;">
   <div class="section-header">
     <span class="section-num">04</span>
@@ -346,11 +401,11 @@
     <div class="section-line"></div>
   </div>
 
-  <div class="contact-section">
-    <div class="contact-heading fade-up">
+  <div class="contact-layout">
+    <div class="contact-big fade-up">
       Let's<br>build<br><span class="accent">something.</span>
     </div>
-    <div class="contact-right fade-up">
+    <div class="contact-items fade-up" style="transition-delay:0.15s;">
       <div class="contact-item">
         <span class="contact-label">Email</span>
         <a href="mailto:judemnorvor@gmail.com" class="contact-value">judemnorvor@gmail.com</a>
@@ -366,6 +421,10 @@
       <div class="contact-item">
         <span class="contact-label">Location</span>
         <span class="contact-value">Charleston, IL — Remote-ready</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">Resume</span>
+        <a href="cv/Jude_Norvor_Resume.pdf" download class="contact-value">Download PDF ↓</a>
       </div>
     </div>
   </div>
